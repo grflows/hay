@@ -1,0 +1,5 @@
+print "hello world"
+print "nice to meet ya all"
+// this is a comment
+
+print "see ya around!" // another comment
