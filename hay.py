@@ -33,7 +33,7 @@ def lexer(source):
         if char == '"':
             i += 1
             start = i
-            while i < length and source[i] != '"':
+            while i < length and source[i] != '"': # look ahead till the other dqoute
                 i += 1
             string = source[start:i]
             tokens.append(('STR', string))
@@ -54,7 +54,7 @@ def lexer(source):
 
 
 def parser(tokens):
-    ast = []
+    ast = tokens
     return ast
 
 
